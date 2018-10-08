@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Video einbetten</title>
+</head>
+
+<body>
+    <p>
+        <p>mov/ogg/mp4</p>
+        <video controls width="480" height="270" poster="../media/poster.jpg">
+            <source src="../media/trailer_test.mov">
+            <source src="../media/trailer_test.ogg">
+            <source src="../media/trailer_test.mp4"> Ersatztext
+        </video>
+        <p>Eigene Controls
+            <video id="vid" poster="../media/poster.jpg">
+                <source src="../media/trailer_test.mov">
+                <source src="../media/trailer_test.ogg">
+                <source src="../media/trailer_test.mp4"> Ersatztext
+            </video>
+        </p>
+        <button id="start">Play</button>
+        <button id="stop">Stop</button>
+        <script>
+            var video = document.getElementById('vid');
+            video.play();
+            var start = document.getElementById('start');
+            var stop = document.getElementById('stop');
+            start.addEventListener('click', function() { video.play();});
+            stop.addEventListener('click', function() { video.pause();});
+
+        </script>
+        <p>jpg</p>
+        <img src="../media/welt.jpg" width="480" height="270" alt="welt">
+    </p>
+</body>
+
+</html>
