@@ -51,3 +51,6 @@
 Neue semantische Elemente
 
 * header, navigation, main, footer, aside, ...
+* werden von älteren Browsern nicht unterstützt -> modernizr.2.6.2.js
+* section - hierarchische Organisation des Dokumentes, Überschriften in sections immer h1!
+* article - "neben" der Dokumentstruktur stehende Informationsblöcke
