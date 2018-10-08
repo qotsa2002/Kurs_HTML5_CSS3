@@ -1,9 +1,10 @@
 # Kurs_HTML5_CSS3
 
-## Tools
+## Tools / Infos
 * Live Server Extension für VS code
 * Emmet
   * `html:5` -> vollst. Seitenstruktur 
+* https://caniuse.com - testen von html Sprachelementen & Nutzungsdaten nach Browsern und Ländern
 
 ## Grundstruktur
 ```html
@@ -26,9 +27,9 @@
   * lang
   * dir
 * nur für das Element
-  * id
-  * class 
-  * title
+  * id - muss eindeutig sein
+  * class - gleiche Werte in einem Dokument zulässig
+  * title - wird als Tooltip angezeigt
 * ?
   * style
 
@@ -45,3 +46,8 @@
 * Spezialelemente
   * script - lädt JS-Skript, blockierend, während Skript geladen wird
   * link - setzt referenz auf StyleSheet, nicht blockierend, möglichst weit oben
+
+## Neuerungen mit HTML5
+Neue semantische Elemente
+
+* header, navigation, main, footer, aside, ...
