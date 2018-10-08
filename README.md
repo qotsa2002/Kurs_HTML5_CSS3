@@ -42,3 +42,6 @@
   * strong, statt b
   * em, statt i
   * span (neutrales Element)
+* Spezialelemente
+  * script - lädt JS-Skript, blockierend, während Skript geladen wird
+  * link - setzt referenz auf StyleSheet, nicht blockierend, möglichst weit oben
