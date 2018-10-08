@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Forms</title>
+</head>
+
+<body>
+    <h1>Der Range-Regler</h1>
+    <form action="">
+        <div>
+            <label for="z">Zufriedenheit (10-50)</label>
+            <input type="range" name="Zufriedenheit" id="z" min="10" max="50" step="10" value="24" oninput="this.form.out.value=this.value">
+            <output id="out">20</output>
+            <input type="submit" value="Abschicken">
+        </div>
+
+        <div>
+            <label for="date">Datum:</label>
+            <input type="date" name="datum" id="date">
+        </div>
+
+        <div>
+            <label for="blumen">Liste:</label>
+            <input type="text" name="flowers" id="blumen" list="blumenliste">
+            <datalist id="blumenliste">
+                <option value="Rosen">Rosen</option>
+                <option value="Nelken">Nelken</option>
+                <option value="Wicken">Wicken</option>
+            </datalist>
+        </div>
+        
+    </form>
+</body>
+
+</html>

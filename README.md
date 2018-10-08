@@ -54,3 +54,26 @@ Neue semantische Elemente
 * werden von älteren Browsern nicht unterstützt -> modernizr.2.6.2.js
 * section - hierarchische Organisation des Dokumentes, Überschriften in sections immer h1!
 * article - "neben" der Dokumentstruktur stehende Informationsblöcke - styling über class-Angabe
+* video, iframe (Tipp: Einbettungscode kopieren)
+* Formulare: 
+  * Input-Types date, ...
+  * label
+  * tabindex als Attribut
+  * pattern -> Prüfung erst bei Abschicken
+
+```html
+    <label for="vn">Vorname:</label>  
+    <input id="vn" type="text" name="vorname" required tabindex="1">
+```
+
+  * Auto-Validierung bei GET oder GET novalidate
+  * placeholder attribute
+  * type range
+  * type date, datetime, ...
+  * datalist bei type text, statt select/option (mehr Eingaben möglich)
+  * output-Element - 
+
+## Barrierefreiheit
+* "Komplexes Thema"
+* tabindex: erst die Inputs mit tabindex, dann die ohne Angabe.
+

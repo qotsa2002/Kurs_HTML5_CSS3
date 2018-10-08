@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Forms</title>
+</head>
+
+<body>
+    <h1>Formulare in HTML5</h1>
+    <form action="#" method="GET">
+        <!-- # = Senden an die Originaladresse der Seite, bei novalidate ohne Prüfung -->
+        <div>
+            <label for="nn">Nachname:</label>
+            <input id="nn" type="text" name="nachname" placeholder="Ihr Nachname hier" required>
+
+            <label for="vn">Vorname:</label>
+            <input id="vn" type="text" name="vorname" required tabindex="1">
+        </div>
+        <div>
+            <label for="em">Mail-Adresse:</label>
+            <input type="email" name="emailaddress" id="em">
+        </div>
+
+        <div>
+            <label for="plz">PLZ:</label>
+            <input type="text" name="postleitzahl" id="plz" pattern="[0-9]{5}" title="5 Ziffern mit 0-9">
+        </div>
+
+        <input type="submit" value="Abschicken">
+
+    </form>
+</body>
+
+</html>
