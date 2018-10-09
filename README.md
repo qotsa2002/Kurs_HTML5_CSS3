@@ -135,6 +135,27 @@ Standard-Layout
 1. Border
 1. Margin - mit Margin Merge - überlagern der Margins, der größere gewinnt; body margin geht nach innen! 
 
+* border
+* border-radius
+* box-shadow
+```css
+        #p1 {
+            box-shadow: -5px -10px 5px darkgray; /* l(-)/r(+) t(-)/b(+) Verlauf */
+        }
+```
+  * inset - Shadow nach innen
+  * Listen von shadows - werden von rechts nach links "gemalt";
+  * background: `url(special.gif);` oder `background-image: linear-gradient(155deg, 0%, red 100%);`
+  * Sichtbarkeit:
+```css
+        #p2 {
+            background-color: rosybrown;
+            _display: none; /* aus dem Flow herausnehmen */
+            _visibility: hidden; /* unsichtbar, aber Layout bleibt erhalten */
+            opacity: 0; /* 0 ... 1, Layout bleibt erhalten */
+        }
+```
+ 
 
 
 

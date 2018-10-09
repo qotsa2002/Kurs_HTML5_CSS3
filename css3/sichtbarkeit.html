@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sichtbarkeit</title>
+    <style>
+        body {
+        }
+
+        p {
+            border: 1px solid black;
+        }
+
+        #p1 {
+        }
+
+        #p2 {
+            background-color: rosybrown;
+            _display: none; /* aus dem Flow herausnehmen */
+            _visibility: hidden; /* unsichtbar, aber Layout bleibt erhalten */
+            opacity: 0; /* 0 ... 1, Layout bleibt erhalten */
+        }
+
+        #p3 {
+            background-color: lightgreen;
+        }
+
+        #p4 {
+        }
+    </style>
+</head>
+<body>
+    <p id="p1">p 1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla dignissimos voluptas beatae eos labore minus ipsam rem eaque laborum provident, enim nesciunt ipsa eius, temporibus perferendis itaque adipisci! Est, animi!</p>
+    <p id="p2">p 2 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita, porro hic qui facere fugiat natus ea rem adipisci dicta temporibus iure, delectus ut, fuga facilis nostrum quos voluptatibus sequi. Reprehenderit.</p>
+    <p id="p3">p 3 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore nemo aspernatur ratione delectus quis, veritatis adipisci soluta odit similique ea nam, perferendis corrupti voluptates, cum quia in. Officiis, explicabo sed.</p>
+    <p id="p4">p 4 Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, perspiciatis corrupti! Deserunt ab molestiae iure eligendi. Eaque nam nemo esse ipsam voluptatum explicabo natus itaque sit, amet reprehenderit animi delectus!</p>
+</body>
+</html>
