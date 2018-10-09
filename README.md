@@ -135,6 +135,7 @@ Standard-Layout
 1. Border
 1. Margin - mit Margin Merge - überlagern der Margins, der größere gewinnt; body margin geht nach innen! 
 
+#### Ränder & Schatten
 * border
 * border-radius
 * box-shadow
@@ -145,8 +146,11 @@ Standard-Layout
 ```
   * inset - Shadow nach innen
   * Listen von shadows - werden von rechts nach links "gemalt";
-  * background: `url(special.gif);` oder `background-image: linear-gradient(155deg, 0%, red 100%);`
-  * Sichtbarkeit:
+
+#### Hintergrund
+* background: `url(special.gif);` oder `background-image: linear-gradient(155deg, 0%, red 100%);`
+  
+#### Sichtbarkeit
 ```css
         #p2 {
             background-color: rosybrown;
@@ -155,7 +159,16 @@ Standard-Layout
             opacity: 0; /* 0 ... 1, Layout bleibt erhalten */
         }
 ```
+
+#### Positionierung
  
+value       |  ist im Flow | ist positioniert
+------------|--------------|-----------------
+static      |   x          |    -
+relative    |   x          |    x
+absolute    |   -          |    x (relativ zur Seite)
+fixed       |   -          |    x (relativ zum viewport)
+sticky      |   -          |    x
 
-
+* float: left|right - um divs z.B. nebeneinander zu positionieren [source](./css3/float02.html)
 

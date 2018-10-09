@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Position mit konkreten Positionswerten</title>
+    <style>
+        #header {
+            background-color: #ddd;
+            height:150px;
+            width:400px;
+            margin: auto;
+        }
+        #content {
+            background-color: #ccc;
+            height:250px;
+            width:400px;
+            margin: auto;
+        }
+        #suchfeld {
+            background-color: #bbb;
+            padding: 5px;
+            width:225px;
+            _position: relative;
+            _top: 120px;
+            _left: 170px;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <div id="suchfeld"><input type="text" name="">
+         <button>send</button>
+        </div>
+    </div>
+    <div id="content"></div>
+</body>
+</html>
