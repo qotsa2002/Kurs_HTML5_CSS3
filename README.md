@@ -1,4 +1,4 @@
-# Kurs_HTML5_CSS3
+# HTML5
 
 ## Tools / Infos
 * Live Server Extension für VS code
@@ -76,4 +76,65 @@ Neue semantische Elemente
 ## Barrierefreiheit
 * "Komplexes Thema"
 * tabindex: erst die Inputs mit tabindex, dann die ohne Angabe.
+
+# CSS3
+
+## Selektoren
+
+Priorität:
+* Spezifizität
+  1. ID...
+  1. Class... / Pseudo-Klassen... / Attribut...
+  1. Type...
+* Reihenfolge
+
+### Spezifizität
+Selektor        | ID | Class | Type
+----------------|----|-------|------
+* (Universell)  | 0  | 0     | 0
+p               | 0  | 0     | 1
+.lightblue      | 0  | 1     | 0
+\#div1          | 1  | 0     | 0
+p.yellow        | 0  | 1     | 1
+a:hover (Zustand)        | 0  | 1     | 1
+p:firstline (Struktur)    | 0  | 1     | 1
+[title='...']   | 0  | 1     | 0
+[title=]        | 0  | 1     | 0
+div p           | 0  | 0     | 2
+div#div1_id p   | 1  | 0     | 2
+div#div1_id > p | 1  | 0     | 2
+h1 + p          | 0  | 0     | 2
+ 
+### Konnektoren
+* \+ adjacent sibling
+* ~ all siblings
+* \> children
+
+
+### strukturellen Pseudoklassen
+
+:first-child
+:last-child
+:nth-child(even|odd) jedes gerade/ungerade Element
+:nth-child(number) - das Element an Position number
+:nth-child(n+2) - ab dem 2. Element alle
+:nth-child(3n) - jedes 3. Element
+:first-of-type
+
+ 
+## Layout-Modi
+
+### Flow-Layout
+
+Standard-Layout
+
+### Box-Modell
+
+1. Inhalt (width, height)
+1. Padding
+1. Border
+1. Margin - mit Margin Merge - überlagern der Margins, der größere gewinnt; body margin geht nach innen! 
+
+
+
 

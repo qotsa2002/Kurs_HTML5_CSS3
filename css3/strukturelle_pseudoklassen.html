@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Listen mit strukturellen Pseudoklassen</title>
+    <style>
+        #ul1 li.first {
+            background-color: lightgreen;
+        }
+
+        #ul1 li.last {
+            background-color: lightblue;
+        }
+
+        #ul2 li:first-child {
+            background-color: rgb(211, 158, 202);
+        }
+
+        #ul2 li:last-child {
+            background-color: lightcoral;
+        }
+
+        #ul2 li:nth-child(even) {
+            background-color: lightgreen;
+        }
+
+        #ul2 li:nth-child(3) {
+            background-color: darkgray;
+        }
+
+        #ul3 li:nth-child(3n) {
+            background-color: peachpuff;
+        }
+
+        div.article p:first-child {
+            font-weight: bold;
+        }
+
+        div.article2 p:first-of-type {
+            font-weight: bolder;
+        }
+
+        div.article2 p:first-of-type:hover {
+            background-color: pink;
+            font-size: 2em;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- ul>li*7{listitem $} -->
+    <ul id="ul1">
+        <li class="first">listitem 1</li>
+        <li>listitem 2</li>
+        <li>listitem 3</li>
+        <li>listitem 4</li>
+        <li>listitem 5</li>
+        <li>listitem 6</li>
+        <li class="last">listitem 7</li>
+    </ul>
+    <ul id="ul2">
+        <li>listitem 1</li>
+        <li>listitem 2</li>
+        <li>listitem 3</li>
+        <li>listitem 4</li>
+        <li>listitem 5</li>
+        <li>listitem 6</li>
+        <li>listitem 7</li>
+    </ul>
+    <ul id="ul3">
+        <li>listitem 1</li>
+        <li>listitem 2</li>
+        <li>listitem 3</li>
+        <li>listitem 4</li>
+        <li>listitem 5</li>
+        <li>listitem 6</li>
+        <li>listitem 7</li>
+    </ul>
+    <div class="article">
+        <p>Text im Absatz 1</p>
+        <p>Text im Absatz 2</p>
+    </div>
+    <div class="article">
+        <h1>Überschrift</h1>
+        <p>Text im Absatz 1</p>
+        <p>Text im Absatz 2</p>
+    </div>
+    <div class="article2">
+        <p>Text im Absatz 1</p>
+        <p>Text im Absatz 2</p>
+    </div>
+    <div class="article2">
+        <h1>Überschrift</h1>
+        <p>Text im Absatz 1</p>
+        <p>Text im Absatz 2</p>
+    </div>
+</body>
+
+</html>

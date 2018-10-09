@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS: Selektoren</title>
+    <style>
+        /* css- Kommentar - // ist nicht erlaubt */
+
+        /* Class-Selektor */
+
+        .lightblue {
+            /*freie Klasse*/
+            background-color: lightblue;
+        }
+
+        p.yellow {
+            /*typgebundene Klasse*/
+            background-color: yellow;
+        }
+
+        /* Typselektor */
+
+        p {
+            color: green;
+            background-color: pink;
+        }
+
+        p {
+            background-color: rgb(195, 233, 197);
+            /* wirkt wg. Cascade-Regel*/
+        }
+
+        /* ID-Selektor */
+
+        #div1_id {
+            border: 1px solid black;
+            /*"Multi Property"*/
+        }
+
+        /* Attribut-Selektor */
+
+        /* merke, erst allgemein, dann speziell */
+
+        [title] {
+            border: 1px dotted black;
+        }
+
+        [title='Title Absatz 7'] {
+            border: 2px dashed red;
+        }
+
+        /* Kombination Type & Attribut */
+
+        input[type='submit'] {
+            border: 2px dashed green;
+        }
+
+        /* Pseudo-Klassen-Selektoren */
+
+        /* merke: erst statisch, dann dynamisch */
+
+        a.extern {
+            background-color: grey;
+        }
+
+        a:hover {
+            background-color: grey;
+        }
+
+        p:firstline 
+
+        /* Descendant-Selektor - */
+        div#div1_id p {
+            border: 3px solid brown;
+            /*"Multi Property"*/
+        }
+
+        /* Child-Selektor */
+        div#div1_id > p {
+            border: 3px solid darkblue;
+            /*"Multi Property"*/
+        }
+        h1 + p {
+            border: 3px dotted darkcyan;
+            /*"Multi Property"*/
+        }
+
+
+
+    </style>
+</head>
+
+<body>
+    <h1 class="lightblue">Selektoren</h1>
+    <!-- yello funktioniert nicht-->
+    <p>Gestylter p Absatz</p>
+    <p class="yellow">Gestylter p Absatz</p>
+    <p class="lightblue">Gestylter p Absatz</p>
+    <p id="div1_id">Gestylter p Absatz</p>
+    <p title="Title Absatz 5">Gestylter p Absatz</p>
+    <p>Gestylter p Absatz</p>
+    <div>
+        <p class="lightblue">div Gestylter p Absatz</p>
+        <p title="Title Absatz 7">div Gestylter p Absatz</p>
+    </div>
+    <div id="div1_id">
+        <p class="lightblue">div#div1_id > p Gestylter p Absatz</p>
+        <p title="Title Absatz 7">div#div1_id > p Gestylter p Absatz</p>
+        <div>
+                <p class="lightblue">div#div1_id div Gestylter p Absatz</p>
+                <p title="Title Absatz 7">div#div1_id div Gestylter p Absatz</p>
+        
+        </div>
+    </div>
+    <p>Text mit
+        <a href="#">href</a>, der gestyled werden soll</p>
+    <!-- HTML-Kommentar aus SGML! -->
+</body>
+
+</html>
