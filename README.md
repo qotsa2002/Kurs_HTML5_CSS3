@@ -172,15 +172,15 @@ sticky      |   -          |    x
 
 * `float: left|right` - um divs z.B. nebeneinander zu positionieren & `clear: left|both|right` um das nächste Element im Flow *nach* den gefloateten Elementen zu positionieren [float.html](./css3/float.html) und [float02.html](./css3/float02.html)
 
-#### Tablelayout
+### Tablelayout
 
-* display: table; - optional, solange kein Zugriff auf die ganze Tabelle benötigt wird
-* display: table-row; - optional, solange nur eine Zeile benötigt
-* display: table-cell
+* `display: table;` - optional, solange kein Zugriff auf die ganze Tabelle benötigt wird
+* `display: table-row;` - optional, solange nur eine Zeile benötigt wird
+* `display: table-cell;` - Element soll 1-n Zellen füllen
 
 [layout_03.html](./css3/layout_03.html)
 
-#### Flexlayout
+### Flexlayout
 
 `display:flex`
 
@@ -205,7 +205,7 @@ Items haben
 [A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 
 
-#### Gridlayout
+### Gridlayout
 
 `display:grid`
 
@@ -218,6 +218,24 @@ Von-/Bis-Angaben beziehen sich auf die (Trenn-)Linien der Zeilen und Spalten, d.
 [layout_05.html](./css3/layout_05.html)
 
 https://developer.mozilla.org/de/docs/Web/CSS/CSS_Grid_Layout
+
+
+## Transitions
+
+Gesteuertes Umschalten von einer Darstellung zu einer anderen.
+
+
+Beispiel - Breite beim Übergang eine Sekunde lang ändern: 
+```css
+        .box:hover {
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+            transition: width 1s, height 1s, background-color 1s; /* = all 1s */
+        }
+```
+
+Angabe: Attribut Dauer [Verzögerung]
 
 
 ## Hinweise
