@@ -5,17 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Layout</title>
+    <title>Flexbox</title>
     <style>
         /* Layout */
 
         #wrapper {
             width: 540px;
-            _position: relative;
         }
 
         #contentwrapper {
-            position: relative;
+            display: flex;
+            flex-direction: row;
+            align-items:stretch; /* | flex-start | flex-end | stretch (default) | ... */
+            justify-content: flex-start; /* | flex-start | flex-end | baseline | center | ... */
+            _justify-items: center; /* nur ab Firefox 45 */
         }
         #header {
             background-color: #ddd;
@@ -25,35 +28,29 @@
         #footer {
             background-color: #ddd;
             height: 60px;
-            clear: both;
         }
 
         #spalte1 {
             background-color: lightblue;
-            width: calc(35% - 10px);
-            position: absolute;
+            width: 100px;
+            _height:190px;
             padding: 5px;
-            top: 0;
-            bottom: 0;
+            _flex: 1;
         }
 
         #spalte2 {
             background-color: lightgreen;
-            width: calc(40% - 10px);
-            _position: absolute;
+            width: 100px;
+            height:200px;
             padding: 5px;
-            margin-left: 35%;
-            min-height: 400px;
+            _flex: 1;
          }
 
         #spalte3 {
             background-color: pink;
-            width: calc(25% - 10px);
-            position: absolute;
+            width: 100px;
             padding: 5px;
-            top: 0;
-            bottom: 0;
-            right: 0;
+            _flex: 1;
         }
     </style>
 </head>
@@ -62,13 +59,16 @@
     <div id="wrapper">
         <div id="header">Header</div>
 
-        <div id="contentwrapper">
+        <div id="contentwrapper"> <!-- = TABLE -->
+        <!-- TR -->
             <div id="spalte1">Spalte1 - dolores consectetur voluptate quisquam dicta sit eligendi vero commodi nostrum facere.</div>
             <div id="spalte2">Spalte2 - voluptate quisquam dicta sit eligendi vero commodi nostrum facere.
                 Excepturi eum molestias veritatis sed!</div>
             <div id="spalte3">Spalte3 vile mehr Text - Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit praesentium distinctio
                 sapiente saepe libero, dolores consectetur voluptate quisquam dicta sit eligendi vero commodi nostrum facere.
                 Excepturi eum molestias veritatis sed!</div>
+        <!-- /TR -->
+        <!-- /TABLE -->
         </div>
 
         <div id="footer">Footer</div>

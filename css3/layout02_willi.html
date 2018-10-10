@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Layout - Position</title>
+    <style>
+        /* Elemente haben Defaultmargins von 8 */
+
+        #wrapper {
+            margin: auto;
+            width: 540px;
+            position: relative;
+        }
+
+        #contentwrapper {
+            position: relative;
+
+            border-left: 0;
+            border-right: 0;
+            border-top: 0;
+            border-bottom: 2px;
+            border-color: black;
+            border-style: solid;
+
+        }
+
+        header {
+            background-color: #ddd;
+            height: 80px;
+            border-left: 2px;
+            border-right: 2px;
+            border-top: 2px;
+            border-bottom: 2px;
+            border-color: green;
+            border-bottom-color: black;
+            border-style: solid;
+        }
+
+        #left {
+            background-color: yellow;
+            width: calc(35% - 10px);
+            position: absolute;
+            padding: 5px;
+            min-height: 200px;
+            border-left: 2px;
+            border-right: 2px;
+            border-top: 0;
+            border-bottom: 0;
+            border-color: black;
+            border-style: solid;
+        }
+
+        #middle {
+            background-color: orange;
+            width: calc(40% - 10px);
+            padding: 5px;
+            min-height: 200px;
+            margin-left: 35%;
+            border-left: 2px;
+            border-right: 2px;
+            border-top: 0;
+            border-bottom: 0;
+            border-color: black;
+            border-style: solid;
+        }
+
+        #right {
+            background-color: pink;
+            width: calc(25% - 10px);
+            position: absolute;
+            top: 0;
+            right: 0;
+            padding: 5px;
+            min-height: 200px;
+            border-left: 2px;
+            border-right: 2px;
+            border-top: 0;
+            border-bottom: 0;
+            border-color: black;
+            border-style: solid;
+        }
+
+        footer {
+            background-color: #ddd;
+            height: 60px;
+            border-left: 2px;
+            border-right: 2px;
+            border-top: 0;
+            border-bottom: 2px;
+            border-top-color: black;
+            border-color: firebrick;
+            border-style: solid;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrapper">
+        <header>Position Layout</header>
+        <div id="contentwrapper">
+            <div id="left">
+                <h3>1.te Spalte 1</h3>
+                <p id="p1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, blanditiis.</p>
+            </div>
+            <div id="middle">
+                <h3>1.te Spalte 2</h3>
+                <p id="p1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, blanditiis.</p>
+            </div>
+            <div id="right">
+                <h3>1.te Spalte 3</h3>
+                <p id="p1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, blanditiis.</p>
+            </div>
+        </div>
+        <div id="contentwrapper">
+            <div id="left">
+                <h3>2.te Spalte 1</h3>
+                <p id="p1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, blanditiis.</p>
+            </div>
+            <div id="middle">
+                <h3>2.te Spalte 2</h3>
+                <p id="p1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, blanditiis.</p>
+            </div>
+            <div id="right">
+                <h3>2.te Spalte 3</h3>
+                <p id="p1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, blanditiis.</p>
+            </div>
+        </div>
+        <div id="contentwrapper">
+            <div id="left">
+                <h3>3.te Spalte 1</h3>
+                <p id="p1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, blanditiis.</p>
+            </div>
+            <div id="middle">
+                <h3>3.te Spalte 2</h3>
+                <p id="p1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, blanditiis.</p>
+            </div>
+            <div id="right">
+                <h3>3.te Spalte 3</h3>
+                <p id="p1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, blanditiis.</p>
+            </div>
+        </div>
+        <footer>Footer</footer>
+    </div>
+</body>
+
+</html>

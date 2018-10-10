@@ -162,13 +162,66 @@ Standard-Layout
 
 #### Positionierung
  
-value       |  ist im Flow | ist positioniert
+position:   |  ist im Flow | ist positioniert
 ------------|--------------|-----------------
 static      |   x          |    -
 relative    |   x          |    x
-absolute    |   -          |    x (relativ zur Seite)
+absolute    |   -          |    x (relativ zum nächsten positionierten Parent)
 fixed       |   -          |    x (relativ zum viewport)
 sticky      |   -          |    x
 
-* float: left|right - um divs z.B. nebeneinander zu positionieren [source](./css3/float02.html)
+* `float: left|right` - um divs z.B. nebeneinander zu positionieren & `clear: left|both|right` um das nächste Element im Flow *nach* den gefloateten Elementen zu positionieren [float.html](./css3/float.html) und [float02.html](./css3/float02.html)
 
+#### Tablelayout
+
+* display: table; - optional, solange kein Zugriff auf die ganze Tabelle benötigt wird
+* display: table-row; - optional, solange nur eine Zeile benötigt
+* display: table-cell
+
+[layout_03.html](./css3/layout_03.html)
+
+#### Flexlayout
+
+`display:flex`
+
+Elemente im Flexcontainer richten sich aus nach:
+
+Main Axis: links nach rechts
+```css
+justify-content: flex-start; /* | flex-start | flex-end | center | ... */
+```
+
+Cross Axis: oben nach unten
+```css
+align-items: center; /* | flex-start | flex-end | stretch (default) | ... */
+```
+
+Items haben
+* order - Reihenfolge festlegen
+* flex - relative Breite festlegen
+
+[layout_04.html](./css3/layout_04.html)
+
+[A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+
+
+#### Gridlayout
+
+`display:grid`
+
+Es wird ein Gridtemplate definert, das Spalten un Zeilen festlegt
+
+*Margins werden **nicht** gemerged, sondern addieren sich*
+
+Von-/Bis-Angaben beziehen sich auf die (Trenn-)Linien der Zeilen und Spalten, d.h. bei 3 Spalten habe ich die Linien 1, 2, 3, 4
+
+[layout_05.html](./css3/layout_05.html)
+
+https://developer.mozilla.org/de/docs/Web/CSS/CSS_Grid_Layout
+
+
+## Hinweise
+
+https://www.rechnerhaus.de/blog/unterschied-zwischen-css-scss-sass
+
+https://scotch.io/tutorials/using-sass-with-the-angular-cli

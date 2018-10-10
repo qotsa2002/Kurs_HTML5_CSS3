@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Layout</title>
+    <title>Tablelayout</title>
     <style>
         /* Layout */
 
@@ -15,7 +15,8 @@
         }
 
         #contentwrapper {
-            position: relative;
+            display: table;
+            border-spacing: 5px;
         }
         #header {
             background-color: #ddd;
@@ -25,35 +26,27 @@
         #footer {
             background-color: #ddd;
             height: 60px;
-            clear: both;
         }
 
         #spalte1 {
             background-color: lightblue;
-            width: calc(35% - 10px);
-            position: absolute;
+            width: 35%;
             padding: 5px;
-            top: 0;
-            bottom: 0;
+            display: table-cell;
         }
 
         #spalte2 {
             background-color: lightgreen;
-            width: calc(40% - 10px);
-            _position: absolute;
+            width: 40%;
             padding: 5px;
-            margin-left: 35%;
-            min-height: 400px;
+            display: table-cell;
          }
 
         #spalte3 {
             background-color: pink;
-            width: calc(25% - 10px);
-            position: absolute;
+            width: 25%;
             padding: 5px;
-            top: 0;
-            bottom: 0;
-            right: 0;
+            display: table-cell;
         }
     </style>
 </head>
@@ -62,13 +55,16 @@
     <div id="wrapper">
         <div id="header">Header</div>
 
-        <div id="contentwrapper">
+        <div id="contentwrapper"> <!-- = TABLE -->
+        <!-- TR -->
             <div id="spalte1">Spalte1 - dolores consectetur voluptate quisquam dicta sit eligendi vero commodi nostrum facere.</div>
             <div id="spalte2">Spalte2 - voluptate quisquam dicta sit eligendi vero commodi nostrum facere.
                 Excepturi eum molestias veritatis sed!</div>
             <div id="spalte3">Spalte3 vile mehr Text - Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit praesentium distinctio
                 sapiente saepe libero, dolores consectetur voluptate quisquam dicta sit eligendi vero commodi nostrum facere.
                 Excepturi eum molestias veritatis sed!</div>
+        <!-- /TR -->
+        <!-- /TABLE -->
         </div>
 
         <div id="footer">Footer</div>

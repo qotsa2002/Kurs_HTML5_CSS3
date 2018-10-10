@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Flexbox</title>
+    <style>
+        /* Layout */
+
+        #wrapper {
+            width: 540px;
+            border: solid 4px blue;
+            display: grid;
+            grid-template-columns: 25% 40% 35%;
+            grid-template-rows: 80px auto 60px;
+        }
+
+        #contentwrapper {
+        }
+        #header {
+            background-color: #ddd;
+            grid-column: 1/4;
+        }
+
+        #footer {
+            background-color: #ddd;
+            grid-column: 1/4;
+        }
+
+        #spalte1 {
+            background-color: lightblue;
+            padding: 5px;
+            _margin: 10px;
+        }
+
+        #spalte2 {
+            background-color: lightgreen;
+            padding: 5px;
+            _margin: 10px;
+         }
+
+        #spalte3 {
+            background-color: pink;
+            padding: 5px;
+            _margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="header">Header</div>
+
+            <div id="spalte1">Spalte1</div>
+            <div id="spalte2">Spalte2</div>
+            <div id="spalte3">Spalte3</div>
+
+        <div id="footer">Footer</div>
+    </div>
+</body>
+
+</html>
