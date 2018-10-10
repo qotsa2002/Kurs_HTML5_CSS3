@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Panels anzeigen und target</title>
+    <style>
+        .panel {
+            background-color: #ddd;
+            position: absolute;
+            width: 150px;
+            _opacity: 0;
+            _transition: opacity 1s;
+            top: -200px;
+            transition: top 1s;
+        }
+
+        .panel:target {
+            _background-color: pink;
+            _opacity: 1;
+            _transition: opacity 1s 0.5s;
+            top: 100px;
+            transition: top 1s;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>
+            <a href="#panel1">Panel 1</a>
+        </li>
+        <li>
+            <a href="#panel2">Panel 2</a>
+        </li>
+        <li>
+            <a href="#panel3">Panel 3</a>
+        </li>
+    </ul>
+    <div class="panel" id="panel1">
+        <h3>Panel 1</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam praesentium quibusdam ea?</p>
+
+    </div>
+    <div class="panel" id="panel2">
+        <h3>Panel 2</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur ullam aperiam voluptatum.</p>
+
+    </div>
+    <div class="panel" id="panel3">
+        <h3>Panel 3</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit, necessitatibus! Blanditiis, quae.</p>
+
+    </div>
+</body>
+
+</html>

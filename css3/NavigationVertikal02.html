@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Navigation vertikal</title>
+    <style>
+        #nav {
+            float: left;
+            width: 170px;
+        }
+
+        /* Ebene 1*/
+        #nav ul {
+            _outline: 1px solid red;
+            list-style: none;
+            margin: 0;
+            padding-left: 0;
+        }
+
+        #nav li {
+            _outline: 1px solid green;
+            margin-bottom: 5px; /* Abstand zw. Items */
+            position: relative;
+        }
+        
+        #nav a {
+            text-decoration: none; /* Unterstrich entfernen */
+            display: block; /* vom inline-element zum block-Element machen*/
+            color: black;
+            background-color: #ddd;
+            padding: 5px;
+        }
+
+        #nav a:hover {
+            background-color: yellow;
+        }
+
+        /* Ebene 2ff */
+        #nav ul ul {
+            _outline: 1px solid orange;
+            list-style: none;
+            margin: 0;
+        }
+
+        #nav ul li ul {
+            display: block;
+            position: absolute;
+            left: 175px;
+            width: 0px;
+            overflow: hidden;
+        }
+
+        #nav ul li:hover ul {
+            display: block;
+            width: 140px;
+            transition: width 1s;
+        }
+
+        #nav ul ul li {
+            width: 140px;
+            float: right;
+        }
+        #nav ul ul a {}
+        #nav ul ul a:hover {}
+
+        #content {
+        }
+    </style>
+</head>
+
+<body>
+    <div id="nav">
+        <ul>
+            <li>
+                <a href="">Hauptmenü 1</a>
+            </li>
+            <li>
+                <a href="">Hauptmenü 2</a>
+                <ul>
+                    <li>
+                        <a href="">Untermenü 1</a>
+                    </li>
+                    <li>
+                        <a href="">Untermenü 2</a>
+                    </li>
+                    <li>
+                        <a href="">Untermenü 3</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="">Hauptmenü 3</a>
+            </li>
+            <li>
+                <a href="">Hauptmenü 4</a>
+            </li>
+            <li>
+                <a href="">Hauptmenü 5</a>
+            </li>
+            <li>
+                <a href="">Hauptmenü 6</a>
+            </li>
+            <li>
+                <a href="">Hauptmenü 7</a>
+                <ul>
+                    <li>
+                        <a href="">Untermenü 1</a>
+                    </li>
+                    <li>
+                        <a href="">Untermenü 2</a>
+                    </li>
+                    <li>
+                        <a href="">Untermenü 3</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div id="content">
+        <h1>Navigation vertikal</h1>
+        <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi eos officia porro perspiciatis iure dicta deleniti
+            quae quasi adipisci eligendi reprehenderit laudantium minima, nesciunt consequatur necessitatibus ut dolorum
+            ullam optio.</div>
+        <div>Veritatis reiciendis repudiandae earum quia debitis architecto rerum minus qui, illo unde molestias autem quidem
+            perferendis magnam fugit repellat! Hic officiis eveniet sint, cum id reprehenderit omnis eum! Vitae, atque?</div>
+        <div>Velit, fuga possimus! Voluptates officia, vitae nemo, reprehenderit sequi quam quo nulla cum quisquam officiis nisi
+            odio, veniam repellat dolorum doloremque molestias excepturi consequuntur neque nobis. Aut ullam saepe alias.</div>
+    </div>
+</body>
+
+</html>

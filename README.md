@@ -113,13 +113,13 @@ h1 + p          | 0  | 0     | 2
 
 ### strukturellen Pseudoklassen
 
-:first-child
-:last-child
-:nth-child(even|odd) jedes gerade/ungerade Element
-:nth-child(number) - das Element an Position number
-:nth-child(n+2) - ab dem 2. Element alle
-:nth-child(3n) - jedes 3. Element
-:first-of-type
+* :first-child
+* :last-child
+* :nth-child(even|odd) jedes gerade/ungerade Element
+* :nth-child(number) - das Element an Position number
+* :nth-child(n+2) - ab dem 2. Element alle
+* :nth-child(3n) - jedes 3. Element
+* :first-of-type
 
  
 ## Layout-Modi
@@ -225,7 +225,7 @@ https://developer.mozilla.org/de/docs/Web/CSS/CSS_Grid_Layout
 Gesteuertes Umschalten von einer Darstellung zu einer anderen.
 
 
-Beispiel - Breite beim Übergang eine Sekunde lang ändern: 
+Beispiel - Breite, Höhe, Farbe beim Übergang eine Sekunde lang ändern: 
 ```css
         .box:hover {
             width: 100px;
@@ -237,6 +237,29 @@ Beispiel - Breite beim Übergang eine Sekunde lang ändern:
 
 Angabe: Attribut Dauer [Verzögerung]
 
+
+## Panels ein-/ausblenden
+
+[panels01.html](css3\panels01.html)
+
+[schublade.html](css3\schublade.html)
+
+[schublade02.html](css3\schublade02.html)
+
+
+## Navigation bauen
+
+[NavigationVertikal.html](css3\NavigationVertikal.html)
+
+[NavigationHorizontal.html](css3\NavigationHorizontal.html)
+
+[NavigationVertikal02.html](css3\NavigationVertikal02.html)
+
+Style von c anpassen, wenn Hover über Parent-Element b von c:
+
+```css
+a b:hover c { ... }
+```
 
 ## Hinweise
 

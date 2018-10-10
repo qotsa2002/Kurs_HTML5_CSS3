@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Schublade und Jalousie</title>
+    <style>
+        .panel {
+            background-color: #ddd;
+            overflow: hidden;
+            width: 0px;
+            height: 150px;
+            border: 1px solid #999;
+            border-left-width: 20px;
+            position: relative;
+            transition: width 1s;
+        }
+
+        .panel:hover {
+            width: 150px;
+            transition: width 1s ease-in-out;
+            padding: 5px;
+        }
+
+        .panelinnen {
+            width: 140px;
+
+        }
+
+        .panelinnen2 {
+            width: 140px;
+            /* position: absolute;
+            right: 0; */
+            float: right;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="panel" id="panel1">
+        <div class="panelinnen">
+            <h3>Panel 1</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam praesentium quibusdam ea?</p>
+        </div>
+    </div>
+
+    <p></p>
+
+    <div class="panel" id="panel2">
+        <div class="panelinnen2">
+            <h3>Panel 1</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam praesentium quibusdam ea?</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
