@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>mediaqueries</title>
+    <!--
+    <link rel="stylesheet" href="css/style.css" media="all">
+    <link rel="stylesheet" href="css/print.css" media="print">
+    -->
+    <style>
+        @media screen {
+            /* style */
+            h1 {
+                color: red;
+            }
+        }
+
+        @media screen and (monochrome) {
+            /* style */
+            h1 {
+                color: red;
+                background-color: #ddd;
+            }
+        }
+
+        @media screen and (color) {
+            /* style */
+            h1 {
+                color: red;
+                background-color: goldenrod;
+            }
+        }
+
+        @media screen and (aspect-ratio: 400/821) {
+            /* style */
+            h1 {
+                color: red;
+                background-color: lightgreen;
+            }
+        }
+
+        /* bezogen auf das Gerät */
+        @media screen and (min-width: 480) {
+            /* style */
+            h1 {
+                color: red;
+                background-color: pink;
+            }
+        }
+
+        @media print {
+            /* print */
+            h1 {
+                color: green;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Mediaqueries</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia incidunt eveniet nobis vero harum nostrum voluptatem
+        sunt sapiente odio corporis nisi, et accusantium mollitia quaerat voluptates adipisci obcaecati dolore dolorem.</p>
+
+</body>
+
+</html>
