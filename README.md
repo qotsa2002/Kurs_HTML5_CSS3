@@ -91,7 +91,7 @@ Priorität:
 ### Spezifizität
 Selektor        | ID | Class | Type
 ----------------|----|-------|------
-* (Universell)  | 0  | 0     | 0
+'b' (Universell)  | 0  | 0     | 0
 p               | 0  | 0     | 1
 .lightblue      | 0  | 1     | 0
 \#div1          | 1  | 0     | 0
